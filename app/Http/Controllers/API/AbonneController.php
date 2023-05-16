@@ -13,11 +13,11 @@ class AbonneController extends Controller
      */
     public function index()
     {
-        $motivate = Motivation::all();
+        $ab = Abonne::all();
 
         return response()->json([
             'status' => true,
-            'modtivate' => $motivate
+            'ab' => $ab
         ]);
     }
 
@@ -59,7 +59,7 @@ class AbonneController extends Controller
         
             ]);
             DB::commit();
-            return response()->json($motivate, 201);
+            return response()->json($ab, 201);
         } catch (\Throwable $th) {
             return response()->json("{'error: Imposible de sauvegarder un abonne'}", 404);
         }
