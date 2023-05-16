@@ -18,7 +18,7 @@
         {{ csrf_field() }}
     <div class="container text-center">
         <h2>Ajout d'une motivation</h2>
-        <input type="text" name="motivation" placeholder="intitule">
+        <input type="text" name="intitule" placeholder="intitule">
         <button type="submit" class="btn btn-online-success">Ok</button>
     </div>
 </form>
