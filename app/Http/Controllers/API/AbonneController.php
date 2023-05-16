@@ -76,7 +76,7 @@ class AbonneController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
         $this->validate($request, [
             'nom' => 'required',
@@ -104,7 +104,7 @@ class AbonneController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+    public function destroy(int $id)
     {
         $ab=Abonne::find($id)->delete();
        

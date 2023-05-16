@@ -14,7 +14,7 @@
         <style></style>
 </head>
 <body>
-    <form method ="post" action="/region_insert">
+    <form method ="post" action="/motivation_insert">
         {{ csrf_field() }}
     <div class="container text-center">
         <h2>Ajout d'une motivation</h2>
